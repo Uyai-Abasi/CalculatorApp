@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@900&family=League+Spartan:wght@700&family=Montserrat+Alternates&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+   border: none; 
+   font-family: 'League Spartan', sans-serif;
+}
+body{
+    /* background-color: rgb(46, 2, 9); */
+    background-color: hsl(222, 26%, 31%);
+}
+.calculator{
+    /* border: solid  red; */
+    width: 400px;
+   
+    margin: 50px auto ;
+}
+
+.header{
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    padding-top: 15px;
+    color: white;
+}
+
+.switch{
+    
+    display: flex;
+justify-content: space-between;
+align-items: center;
+width: 120px;
+}
+.switch input {
+ 
+    padding:7px ;
+    appearance:none;
+    border-radius: 10px;
+    opacity: 0;
+    
+  }
+
+  input:hover {
+    cursor: pointer;
+  }
+
+  .tri-state-toggle {
+      display: block;
+      justify-content: center;
+      background-color: hsl(224, 36%, 15%);
+
+    border-radius: 50px;
+  
+}
+#one {
+    opacity: 1;
+    background-color:hsl(6, 63%, 50%);
+}
+
+.display{
+    padding-top: 15px;
+    
+}
+.display input{
+  
+    width: 370px;
+    height: 90px;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: hsl(224, 36%, 15%);
+    color: white;
+    font-size: 40px;
+  
+    display: flex;
+    font-weight: bolder;
+    text-align: end;
+    justify-content: end;
+}
+.keys{
+
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: hsl(223, 31%, 20%);
+}
+.keys .row-1 :nth-child(4){
+    background-color: hsl(225, 21%, 49%) ;
+color: white;
+}
+button,
+input{
+/* border: solid seagreen; */
+cursor: pointer;
+}
+
+.keys .row-1,
+.keys .row-2,
+.keys .row-3,
+.keys .row-4,
+.keys .row-5{
+    /* border: solid magenta; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20px;
+    
+}
+.row-1 button,
+.row-2 button,
+.row-3 button,
+.row-4 button{
+    border: none;
+border-bottom:40px ;
+    font-size: 25px;
+    font-weight: bolder;
+    width: 80px;
+    height: 5vh;
+   
+    border-radius: 10px;
+    color: hsl(221, 14%, 31%);
+}
+.row-5 input{
+    /* border: solid rgb(160, 22, 22); */
+
+        width: 175px;
+    height:6vh;
+    border-radius: 10px;
+color: white ;
+font-size: 20px;
+font-weight: bolder;
+}
+.row-5 input:nth-child(1){
+    background-color: hsl(225, 21%, 49%) ;
+    
+    box-shadow: hsl(224, 28%, 35%);
+}
+.row-5 input:nth-child(2){
+    background-color: hsl(6, 63%, 50%) ;
+}
+
+@media only screen and (max-width: 600px) {
+  
+.calculator{
+    width: 350px;
+    /* border: solid red; */
+    height: 100%;
+margin: auto ;
+}
+
+.display input{
+    /* border: dotted darkmagenta; */
+    width: 320px;
+
+    border-radius: 5px;
+    padding-top: 15px;
+    background-color: hsl(224, 36%, 15%);
+    
+}
+.keys{
+  
+    padding: 20px;
+}
+    .row-1 button,
+.row-2 button,
+.row-3 button,
+.row-4 button{
+    /* border: solid black; */
+    font-size: 25px;
+    font-weight: bolder;
+    width: 70px;
+    height: 70px;
+    /* padding: 15px; */
+    border-radius: 10px;
+    color: hsl(221, 14%, 31%);
+    /* border: solid saddlebrown; */
+}
+
+.row-5 input{
+    /* border: solid rgb(160, 22, 22); */
+
+        width: 145px;
+    height:60px;}
+  }
