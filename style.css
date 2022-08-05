@@ -79,7 +79,6 @@ width: 120px;
     justify-content: end;
 }
 .keys{
-
     padding: 10px;
     margin-top: 20px;
     border-radius: 10px;
@@ -87,12 +86,12 @@ width: 120px;
 }
 .keys .row-1 :nth-child(4){
     background-color: hsl(225, 21%, 49%) ;
-color: white;
+    color: white;
 }
 button,
 input{
-/* border: solid seagreen; */
-cursor: pointer;
+    /* border: solid seagreen; */
+    cursor: pointer;
 }
 
 .keys .row-1,
@@ -107,12 +106,14 @@ cursor: pointer;
     padding-top: 20px;
     
 }
+
 .row-1 button,
 .row-2 button,
 .row-3 button,
 .row-4 button{
-    border: none;
-border-bottom:40px ;
+    /* border: none; */
+    box-shadow: inset 0px -3px 1px hsl(224, 28%, 35%) ;
+    border-bottom:40px ;
     font-size: 25px;
     font-weight: bolder;
     width: 80px;
@@ -128,6 +129,8 @@ border-bottom:40px ;
     height:6vh;
     border-radius: 10px;
 color: white ;
+    /* border:  solid red; */
+    box-shadow: inset 0px -3px 1px hsl(224, 28%, 35%);
 font-size: 20px;
 font-weight: bolder;
 }
@@ -138,6 +141,7 @@ font-weight: bolder;
 }
 .row-5 input:nth-child(2){
     background-color: hsl(6, 63%, 50%) ;
+    box-shadow: inset 0px -3px 1px hsl(6, 70%, 34%);
 }
 
 @media only screen and (max-width: 600px) {

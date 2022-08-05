@@ -3,8 +3,8 @@
 // object.style.color = "blue"
 
 let screen = document.getElementById("display");
-
 let keys = document.getElementsByClassName("btn");
+let button = document.getElementsByTagName("button");
 // console.log(keys)
 // keys.style.backgroundColor="blue"
 
@@ -39,7 +39,9 @@ arr.forEach((element, index) => {
       document.getElementsByClassName("header")[0].style.color = "white"
       document.getElementsByClassName("delete")[0].style.backgroundColor = "hsl(225, 21%, 49%)"
       document.getElementsByClassName("reset")[0].style.backgroundColor = "hsl(225, 21%, 49%)"
+      document.getElementsByClassName("reset")[0].style.boxShadow ="0px 3px 1px hsl(224, 28%, 35%)"
       document.getElementsByClassName("equal")[0].style.backgroundColor="hsl(6, 63%, 50%)"
+      document.getElementsByClassName("equal")[0].style.boxShadow ="0px 3px 1px  hsl(6, 70%, 34%)"
       document.getElementsByClassName("tri-state-toggle")[0].style.backgroundColor=" hsl(224, 36%, 15%)"
       document.getElementsByClassName("toggle")[0].style.backgroundColor="hsl(6, 63%, 50%)"
       for(let i = 0; i < keys.length; i++){
@@ -55,12 +57,19 @@ arr.forEach((element, index) => {
       document.getElementsByClassName("header")[0].style.color = "hsl(60, 10%, 19%)"
       document.getElementsByClassName("delete")[0].style.backgroundColor = " hsl(185, 42%, 37%)"
       document.getElementsByClassName("reset")[0].style.backgroundColor = " hsl(185, 42%, 37%)"
+      document.getElementsByClassName("reset")[0].style.boxShadow ="0px 3px 1px hsl(185, 58%, 25%) "
       document.getElementsByClassName("equal")[0].style.backgroundColor=" hsl(25, 98%, 40%)"
+      document.getElementsByClassName("equal")[0].style.boxShadow="0px 3px 1px  hsl(25, 99%, 27%)"
       document.getElementsByClassName("tri-state-toggle")[0].style.backgroundColor="hsl(0, 5%, 81%)"
       document.getElementsByClassName("toggle")[1].style.backgroundColor="hsl(25, 98%, 40%)"
+      
       for(let i = 0; i < keys.length; i++){
         keys[i].style.color="hsl(60, 10%, 19%)"
         keys[i].style.backgroundColor = " lightgray"
+      
+      }
+      for (let i = 0; i<button.length; i++){
+        button[i].style.boxShadow=" 0px 3px 1px hsl(224, 28%, 35%)"
       }
 
     } else {
@@ -71,12 +80,18 @@ arr.forEach((element, index) => {
       document.getElementsByClassName("header")[0].style.color = "hsl(52, 100%, 62%)"
       document.getElementsByClassName("delete")[0].style.backgroundColor = " hsl(281, 89%, 26%)"
       document.getElementsByClassName("reset")[0].style.backgroundColor = " hsl(281, 89%, 26%)"
+      document.getElementsByClassName("reset")[0].style.boxShadow = "0px 3px 1px  hsl(290, 70%, 36%)"
       document.getElementsByClassName("equal")[0].style.backgroundColor="hsl(177, 92%, 70%)"
+      document.getElementsByClassName("equal")[0].style.boxShadow="0px 3px 1px hsl(177, 92%, 70%) "
       document.getElementsByClassName("tri-state-toggle")[0].style.backgroundColor="hsl(268, 71%, 12%)"
       document.getElementsByClassName("toggle")[2].style.backgroundColor=" hsl(176, 100%, 44%)"
+      
       for(let i = 0; i < keys.length; i++){
-       keys[i].style.color="hsl(52, 100%, 62%)"
+        keys[i].style.color="hsl(52, 100%, 62%)"
         keys[i].style.backgroundColor = "hsl(268, 47%, 21%)"
+      }
+      for (let i = 0; i<button.length; i++){
+        button[i].style.boxShadow=" 0px 3px 1px hsl(290, 70%, 36%)"
       }
 
 
